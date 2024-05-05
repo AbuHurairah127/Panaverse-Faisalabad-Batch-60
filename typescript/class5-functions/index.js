@@ -102,7 +102,26 @@ const arrFunctionWithReturn = (val) => {
 var _value = arrFunctionWithReturn("Testing");
 console.log("🚀 ~ value:", arrFunctionWithReturn("Testing"));
 // !Lambda Functions
+const product = (num1) => num1;
 const sum = (num1) => {
     return num1 + 10;
 };
 console.log("Sum is ", sum(10));
+const _userName = (firstName, lastName) => {
+    console.log(firstName + lastName);
+};
+const _userName2 = (lastName, firstName) => {
+    if (lastName) {
+        console.log("LastNAme exists");
+    }
+    else {
+        console.log("LastName don't exist");
+    }
+};
+_userName2("Abu Hurairah");
+_userName2("Naveed", "Sarwar");
+const _userName3 = (firstName, lastName = "Khan") => {
+    console.log(firstName + lastName);
+};
+_userName3("Zia");
+_userName3("Naveed", "Sarwar");

@@ -129,3 +129,23 @@ const sum = (num1: number) => {
 };
 
 console.log("Sum is ", sum(10));
+
+const _userName = (firstName: string, lastName: string) => {
+  console.log(firstName + lastName);
+};
+const _userName2 = (lastName: string, firstName?: string) => {
+  if (lastName) {
+    console.log("LastNAme exists");
+  } else {
+    console.log("LastName don't exist");
+  }
+};
+_userName2("Abu Hurairah");
+_userName2("Naveed", "Sarwar");
+
+const _userName3 = (firstName: string, lastName: string = "Khan") => {
+  console.log(firstName + lastName);
+};
+
+_userName3("Zia");
+_userName3("Naveed", "Sarwar");
