@@ -88,5 +88,3 @@ class Human {
     this.password = pass;
   }
 }
-
-const human = new Human("Abu Hurairah", 21);
