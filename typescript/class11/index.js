@@ -53,11 +53,13 @@ class Human {
     get Password() {
         return this.password;
     }
-    set newPassword(pass) {
+    set updatepass(pass) {
         this.password = pass;
+    }
+    run() {
+        console.log(`Run ${name}`);
     }
 }
 const human = new Human("Abu Hurairah", 21);
-human.newPassword = "NewPass";
-console.log("🚀 ~ human:", human.Password);
+human.run();
 export {};

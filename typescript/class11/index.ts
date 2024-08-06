@@ -87,4 +87,10 @@ class Human {
   set updatepass(pass: string) {
     this.password = pass;
   }
+  run() {
+    console.log(`Run ${name}`);
+  }
 }
+
+const human = new Human("Abu Hurairah", 21);
+human.run();
