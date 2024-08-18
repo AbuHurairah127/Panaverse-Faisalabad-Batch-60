@@ -9,3 +9,6 @@
 .para {
   letter-spacing: 10px;
 }
+input {
+  border: 1px solid gray;
+}
