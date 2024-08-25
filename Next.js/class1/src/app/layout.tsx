@@ -16,8 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={"py-16"}>
-        <header className="bg-orange-300 h-screen w-screen"> header</header>
+      <body className={""}>
+        {/* <header className="bg-orange-300 h-screen w-screen"> header</header> */}
         {children}
         <footer></footer>
       </body>
