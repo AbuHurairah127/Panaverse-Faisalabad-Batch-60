@@ -1,0 +1,22 @@
+/* Selector */
+/* Property: Value */
+
+.background-red {
+  background-color: red;
+}
+.height {
+  height: 15rem;
+}
+.flexbox {
+  display: flex;
+}
+.grid {
+  display: flex;
+}
+
+.background-red {
+  background-color: aqua;
+}
+
+.abuhurairah {
+}

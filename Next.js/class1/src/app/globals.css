@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+@layer components {
+  .box {
+    @apply w-full border border-black h-20;
+  }
+  .center {
+    @apply flex justify-center items-center;
+    background-color: brown;
+  }
+}
+
 #test {
   color: blueviolet;
 }
@@ -11,4 +28,8 @@
 }
 input {
   border: 1px solid gray;
+}
+
+.test:hover {
+  scale: 0.7;
 }
