@@ -73,10 +73,12 @@
 // self-closing
 
 import React from "react";
+import Button from "../components/common/button/Button";
 
 const page = () => {
   return (
     <main className="bg-gray-300 h-[500vh] relative">
+      <Button title="Button in class3"/>
       {/* <div className="w-10 h-10 bg-green-500 fixed right-5 bottom-5"></div> */}
       {/* <div className="w-10 h-10 bg-green-500 relative "></div> */}
       {/* <div className="w-10 h-10 bg-green-500 relative "></div> */}

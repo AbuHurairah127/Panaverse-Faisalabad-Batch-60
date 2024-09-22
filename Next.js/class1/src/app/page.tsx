@@ -1,8 +1,11 @@
+import Button from "./components/common/button/Button";
+
 const page = () => {
   let nam = "Abu Hurairah";
   return (
     // <tagname>content</tagname>
     <>
+    <Button/>
       <h1>{nam}</h1>
       <h1>{nam}</h1>
       <h1>{nam}</h1>
