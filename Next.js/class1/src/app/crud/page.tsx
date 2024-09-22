@@ -14,6 +14,17 @@ const Page = () => {
     title: "",
     description: "",
   });
+
+  const onDeleteHandler = (_id: number) => {
+   
+    setTodos(
+      todos.filter((data, i) => {
+        if (data.id !== _id) {
+          return true;
+        }
+      })
+    );
+  };
   return (
     <main className="flex flex-col justify-center items-center">
       <div className="my-2.5 border-b border-black/10">Todo Application</div>
@@ -59,9 +70,36 @@ const Page = () => {
         </button>
       </form>
       <div>
-        {todos.map((data, i) => {
-          return <p key={i}>{data.id + " ) " + data.title}</p>;
-        })}
+        <table>
+          <thead>
+            <th>Index</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </thead>
+          <tbody>
+            {todos.map((data, i) => {
+              return (
+                <tr key={i}>
+                  <td>{data.id}</td>
+                  <td>{data.title}</td>
+                  <td>{data.description}</td>
+                  <td>
+                    <button
+                      className="bg-red-600 rounded-lg text-sm text-white py-1 px-3"
+                      onClick={() => {
+                        onDeleteHandler(data.id);
+                      }
+                    }
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
     </main>
   );
