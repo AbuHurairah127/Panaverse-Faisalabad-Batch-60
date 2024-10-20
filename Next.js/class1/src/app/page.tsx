@@ -1,12 +1,24 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Button from "./components/common/button/Button";
 
-const page = () => {
+const Page = () => {
+  const router = useRouter();
   let nam = "Abu Hurairah";
   return (
     // <tagname>content</tagname>
     <>
-    <Button/>
       <h1>{nam}</h1>
+      <button
+        onClick={() => {
+          console.log("Clicked");
+          setTimeout(() => {
+            router.push("admin");
+          }, 3000);
+        }}
+      >
+        Change Route
+      </button>
       <h1>{nam}</h1>
       <h1>{nam}</h1>
       <h1>{nam}</h1>
@@ -63,4 +75,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
