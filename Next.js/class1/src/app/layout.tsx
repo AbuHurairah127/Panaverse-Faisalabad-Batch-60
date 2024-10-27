@@ -1,6 +1,4 @@
-"use client";
 import { Inter, Sora } from "next/font/google";
-import { usePathname } from "next/navigation";
 import { NextRequest } from "next/server";
 import "./custom.css";
 import "./globals.css";
@@ -17,8 +15,6 @@ export default function RootLayout({
   children: React.ReactNode;
   res: NextRequest;
 }>) {
-  const path = usePathname();
-  console.log("🚀 ~ path:", path);
   return (
     <html lang="en">
       <head></head>

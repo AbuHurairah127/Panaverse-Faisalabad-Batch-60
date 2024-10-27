@@ -1,3 +1,4 @@
+import { fetchProducts } from "@/sanity/data/fetch";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,6 +17,8 @@ const page = async () => {
   //   const getData = await fetch("https://dummyjson.com/products");
   //   const respJson = await getData.json();
   const data = await getProductsData();
+  const sanity = await fetchProducts();
+  console.log("🚀 ~ page ~ sanity:", sanity);
 
   return (
     <main className="flex flex-wrap">
